@@ -262,7 +262,7 @@ color: var(--main-text-color);
     display: flex;
 }
 .feature-list .list-item{
-    width: 270px;0
+    width: 270px;
 }
 .feature-list .list-item:not(:last-child){
 margin-right: 30px;
@@ -345,6 +345,9 @@ margin-bottom: 10px;
 .button-list{
     list-style-type: none;
 }
+.button-list{
+    margin-bottom: 50px;
+}
 .btn:hover {
     background: var(--button-background-color);
     color: var(--button-color);
@@ -377,12 +380,25 @@ background-color: var(--link-background-color);
 
 
 /* ...............PICTURES................... */
+ .image-list{
+    display: flex;
+    flex-wrap: wrap;
+}
 .image-list{
 list-style-type: none;
 }
-.image-list .image-item{
-    display: flex;
+.image-item{
+margin-right: 20px;
+margin-bottom: 20px;
 }
+.image-item:nth-child(3n) {
+ margin-right: 0;
+ }
+
+.image-item{
+    width: 370px;
+}
+
 .image-name{
 font-weight: 700;
 font-size: 18px;
@@ -397,7 +413,9 @@ line-height: 1.87;
 letter-spacing: 0.03em;
 color: var(--secondary-text-color);
 }
-/* FOOTER */
+
+
+/* ................................FOOTER .............*/
 .container  .footer-finish{
 max-width: 1600px;
 }
