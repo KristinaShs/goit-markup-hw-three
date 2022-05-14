@@ -84,7 +84,7 @@ color: var(--main-text-color);
 text-decoration: none;
 }
 .navigation:hover {
- background-color: var(--link-background-color);
+ background-color: transparent;
  color: #2196F3;
  }
  .navigation:focus {
@@ -120,6 +120,7 @@ letter-spacing: 0.02em;
 text-decoration: none;
 list-style-type: none; 
 color: var(--main-text-color);
+background-color: transparent;
 }
 .links .link-item:not(:last-child){
     margin-right: 50px;
@@ -164,7 +165,7 @@ list-style-type: none;
 }
 
 .contact:hover {
-background-color: var(--link-background-color);
+background-color: transparent;
 color: var(--link-text-color);
 }
 .contact:focus {
@@ -321,7 +322,7 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--main-text-color);
-margin-top: 10px;
+margin-top: 20px;
 margin-bottom: 10px;
 }
 .occupation{
@@ -332,7 +333,15 @@ margin-bottom: 10px;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
-/* PORTFOLIO */
+/* ....................PORTFOLIO................ */
+.button-list{
+    display: flex;
+    justify-content: center;
+}
+
+.button-list .button-item:not(:last-child){
+    margin-right: 10px;
+}
 .button-list{
     list-style-type: none;
 }
@@ -362,11 +371,17 @@ line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
 text-align: center;
-color: var(--button-color);
-background-color: var(--button-background-color)
+color: var(--main-text-color)
+background-color: var(--link-background-color);
 }
+
+
+/* ...............PICTURES................... */
 .image-list{
 list-style-type: none;
+}
+.image-list .image-item{
+    display: flex;
 }
 .image-name{
 font-weight: 700;
